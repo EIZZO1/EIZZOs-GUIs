@@ -228,35 +228,7 @@ model-data: 1234      # CustomModelData for resource packs
 enchanted: true       # Adds enchantment glow effect
 ```
 
----
 
-## 🧰 Development
-
-### Dependencies
-- Paper API 1.21.1
-- PlaceholderAPI (optional, soft-depend)
-- Vault (optional, for economy requirements)
-- EIZZOs-Tokens (optional, for token requirements)
-
-### Building
-```bash
-cd plugins/source/EIZZOs-GUIs
-mvn clean package
-```
-
-### Deployment
-```bash
-# Copy to central plugins
-cp target/EIZZOs-GUIs-*.jar ../../
-
-# Copy to lobby server
-cp target/EIZZOs-GUIs-*.jar ../../../servers/lobby/plugins/
-
-# Restart lobby
-cd ../../..
-./scripts/stop-lobby.sh
-./scripts/start-lobby.sh
-```
 
 ---
 
