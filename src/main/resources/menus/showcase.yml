@@ -1,0 +1,80 @@
+config-version: 1.0
+title: "<gradient:#ff0000:#0000ff>EIZZOs-GUIs Showcase</gradient>"
+size: 45
+items:
+  slot_4:
+    slot: 4
+    material: PAPER
+    name: "<gold>Welcome!"
+    lore:
+      - "<gray>This is a showcase menu."
+      - "<gray>Explore the features below."
+    model-data: 0
+  slot_10:
+    slot: 10
+    material: DIAMOND_SWORD
+    name: "<red>OP Command Test"
+    lore:
+      - "<gray>Click to give yourself"
+      - "<gray>Creative Mode (as OP)."
+    actions:
+      - "[op] gamemode creative %player_name%"
+      - "[message] <green>You are now in Creative Mode!"
+  slot_12:
+    slot: 12
+    material: EMERALD
+    name: "<green>Economy Check"
+    lore:
+      - "<gray>Cost: $100"
+      - "<gray>Click to buy a diamond."
+    click_requirement:
+      money: 100
+    actions:
+      - "[console] give %player_name% diamond 1"
+      - "[message] <green>Purchased a diamond!"
+  slot_14:
+    slot: 14
+    material: "[PLAYER] EIZZO"
+    name: "<aqua>Head Support"
+    lore:
+      - "<gray>This is EIZZO's head."
+      - "<gray>Using [PLAYER] prefix."
+  slot_16:
+    slot: 16
+    material: "[BASE64] eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTIyODRlMTMyYmZkNjVjY2JkY2UwZmRkY2czOTc3NzllODYxODQ3NmU3YjRlYjRjZDAzZjExNTRmYmI3In19fQ=="
+    name: "<light_purple>Base64 Head"
+    lore:
+      - "<gray>Custom texture via Base64."
+      - "<gray>Click to say Hello."
+    actions:
+      - "[message] <light_purple>Hello World!"
+  slot_22:
+    slot: 22
+    material: COMMAND_BLOCK
+    name: "<yellow>Sub-Menu"
+    lore:
+      - "<gray>Click to open another menu."
+    actions:
+      - "[opengui] example"
+  slot_30:
+    slot: 30
+    material: BARRIER
+    name: "<red>Restricted Item"
+    lore:
+      - "<gray>You need permission"
+      - "<gray>'eguis.admin' to see this."
+    view_requirement:
+      permission: eguis.admin
+  slot_32:
+    slot: 32
+    material: BOOK
+    name: "<blue>PlaceholderAPI"
+    lore:
+      - "<gray>Your Name: %player_name%"
+      - "<gray>Your Ping: %player_ping%"
+  close_button:
+    slot: 40
+    material: BARRIER
+    name: "<red>Close"
+    actions:
+      - "[close]"

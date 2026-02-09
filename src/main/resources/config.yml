@@ -1,0 +1,22 @@
+config-version: 1.1
+
+# EIZZOs-GUIs Configuration
+# Define sounds, default settings, and more here.
+
+# Default sound for opening a GUI
+open-sound: BLOCK_CHEST_OPEN
+
+# Default sound for closing a GUI
+close-sound: BLOCK_CHEST_CLOSE
+
+# Default sound for clicking an item
+click-sound: UI_BUTTON_CLICK
+
+# Default sound for failing a requirement (insufficient funds, no permission)
+fail-sound: BLOCK_ANVIL_LAND
+
+# Economy Settings
+# Use EIZZOs-Tokens for all 'money' requirements instead of Vault
+use-tokens: false
+# The token ID to use if use-tokens is true
+token-id: "tokens"
