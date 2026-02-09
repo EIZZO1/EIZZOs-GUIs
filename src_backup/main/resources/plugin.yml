@@ -1,0 +1,12 @@
+name: EIZZOs-GUIs
+version: 1.0-SNAPSHOT
+main: com.eizzo.guis.EizzoGUIs
+api-version: 1.21
+depend: [Vault, PlaceholderAPI, EIZZOs-Tokens]
+softdepend: [Citizens]
+authors: [Gemini]
+description: A fully customizable GUI engine for Eizzo servers.
+commands:
+  eguis:
+    description: Main command for EIZZOs-GUIs
+    aliases: [egui, eizzo-guis]
